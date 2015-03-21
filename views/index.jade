@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    title= "sample webpack config"
+  body
+    h1 Served by express on port 8080
+    h2 In dev, assets served by webpack dev server on port 8090
+    h2 In prod, assets built, optimized and hashed by webpack, then served by
+      | express static
+    #react-root
+    script(src= scriptURI)

@@ -1,0 +1,29 @@
+{
+  "name": "sample-webpack-config",
+  "version": "0.0.0",
+  "description": "An example WebPack config setup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "webpack-dev-server --config config/dev.webpack.config.js --progress --colors --port 8090 --inline",
+    "hot-dev-server": "webpack-dev-server --config config/hot-dev.webpack.config.js --hot --progress --colors --port 8090 --inline",
+    "build": "webpack --config config/production.webpack.config.js --progress --colors --profile",
+    "serve": "node_modules/babel-core/bin/babel-node server.js"
+  },
+  "author": "JC <jorge.e.colindres@gmail.com>",
+  "dependencies": {
+    "autoprefixer-loader": "~1.1.0",
+    "babel-core": "^4.3.0",
+    "babel-loader": "^4.0.0",
+    "css-loader": "^0.9.1",
+    "express": "^4.12.3",
+    "extract-text-webpack-plugin": "^0.3.8",
+    "jade": "^1.9.2",
+    "jsonfile": "^2.0.0",
+    "react": "^0.13.1",
+    "react-hot-loader": "^1.1.5",
+    "style-loader": "^0.8.3",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
